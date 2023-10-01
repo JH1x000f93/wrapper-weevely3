@@ -278,8 +278,8 @@ class Terminal(CmdModules):
                 isinstance(result, str) and
                 result.endswith('\n')
             ) else result
-
-        log.info(result)
+        print(result)
+        #log.info(result)
 
     def do_show(self, line, cmd):
         """Command "show" which prints session variables"""
